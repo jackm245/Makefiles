@@ -1,0 +1,77 @@
+[global_config]
+  dbus = False
+  always_on_top = True
+  inactive_color_offset = 1.0
+  enabled_plugins = LaunchpadBugURLHandler, LaunchpadCodeURLHandler, APTURLHandler, TerminalShot, TerminatorThemes
+  always_split_with_profile = True
+  title_use_system_font = False
+[keybindings]
+  switch_to_tab_1 = <Alt>1
+  switch_to_tab_2 = <Alt>2
+  switch_to_tab_3 = <Alt>3
+  switch_to_tab_4 = <Alt>4
+  full_screen = <Alt>f
+[profiles]
+  [[default]]
+    background_color = "#1e2127"
+    background_darkness = 0.55
+    background_type = transparent
+    cursor_blink = False
+    cursor_color = "#676c76"
+    font = Source Code Pro 11
+    foreground_color = "#5c6370"
+    show_titlebar = False
+    scrollbar_position = hidden
+    palette = "#000000:#e06c75:#98c379:#d19a66:#61afef:#c678dd:#56b6c2:#abb2bf:#5c6370:#e06c75:#98c379:#d19a66:#61afef:#c678dd:#56b6c2:#fffefe"
+    use_system_font = False
+    use_theme_colors = True
+    background_image = None
+  [[testing]]
+    background_color = "#282828"
+    cursor_color = "#839496"
+    font = Fixed 20
+    foreground_color = "#ebdbb2"
+    show_titlebar = False
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    background_image = None
+  [[honukai]]
+    background_darkness = 0.92
+    background_type = transparent
+    cursor_color = "#babbc8"
+    font = Fixed 20
+    show_titlebar = False
+    palette = "#000000:#dc4f2f:#6bbd3a:#e5d62c:#256ffc:#f258b8:#38b1d9:#bbbbbb:#555555:#e17e63:#7eb959:#ffff55:#5c8ef3:#f982c0:#78cde6:#ffffff"
+    background_image = None
+  [[styli]]
+    cursor_color = "#aaaaaa"
+    use_theme_colors = True
+  [[one_theme]]
+    cursor_blink = False
+    cursor_color = "#aaaaaa"
+    font = Source Code Pro 11
+    show_titlebar = False
+    use_system_font = False
+  [[One dark]]
+    background_color = "#1e2127"
+    background_darkness = 0.55
+    background_type = transparent
+    cursor_blink = False
+    cursor_color = "#676c76"
+    font = Source Code Pro 11
+    foreground_color = "#5c6370"
+    show_titlebar = False
+    scrollbar_position = hidden
+    palette = "#000000:#e06c75:#61afef:#d19a66:#98c379:#c678dd:#56b6c2:#abb2bf:#5c6370:#e06c75:#61afef:#d19a66:#98c379:#c678dd:#56b6c2:#fffefe"
+    use_system_font = False
+    use_theme_colors = True
+    background_image = None
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      profile = Blitz
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
