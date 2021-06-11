@@ -72,13 +72,26 @@ if ${use_color} ; then
 	if [[ ${EUID} == 0 ]] ; then
 		PS1='\[\033[01;31m\][\h\[\033[01;36m\] \W\[\033[01;31m\]]\$\[\033[00m\] '
 	else
-		PS1='\[\033[01;32m\][\u@\h\[\033[01;37m\] \W\[\033[01;32m\]]\$\[\033[00m\] '
-	fi
+		# PS1='\[\033[01;36m\][\u@\h\[\033[01;37m\] \W\[\033[01;36m\]]\$\[\033[00m\] '
+		PS1='\[\033[01;36m\] \W \$\[\033[00m\] '
+    fi
 
-	alias ls='ls --color=auto'
+	# alias ls='ls --color=auto'
+    # alias la='ls -A'
+    alias ls='exa -al --color=always --group-directories-first' # my preferred listing
+    alias la='exa -a --color=always --group-directories-first'  # all files and dirs
+    alias ll='exa -l --color=always --group-directories-first'  # long format
+    alias lt='exa -aT --color=always --group-directories-first' # tree listing
+    alias l.='exa -a | egrep "^\."'
+    alias ..='cd ..'
+    alias mv='mv -i'
+    alias rm='rm -i'
 	alias grep='grep --colour=auto'
 	alias egrep='egrep --colour=auto'
 	alias fgrep='fgrep --colour=auto'
+    alias vim='nvim'
+
+
 else
 	if [[ ${EUID} == 0 ]] ; then
 		# show root@ when we don't have colors
@@ -137,4 +150,7 @@ ex ()
     echo "'$1' is not a valid file"
   fi
 }
-
+# Import terminal colorscheme from 'wal'
+# (wal -r &)
+# cat /home/jack/.cache/wal/sequences
+neofetch
