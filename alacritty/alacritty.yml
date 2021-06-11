@@ -3,7 +3,8 @@
 colors:
   # Default colors
   primary:
-    background: "#232731"
+    # background: "#232731"
+    background: "#000000"
     foreground: "#D8DEE9"
 
   # Normal colors
@@ -28,8 +29,6 @@ colors:
     cyan: "#88c0d0"
     white: "#abb2bf"
 
-  background_opacity: 0.5
-
   # Change cursor colors
   cursor:
     text: "#3B4252"
@@ -39,6 +38,7 @@ cursor:
   style:
     blinking: Never
 
+background_opacity : 0.4
 font:
   # The normal (roman) font face to use.
   normal:
