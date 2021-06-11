@@ -4,6 +4,8 @@ set nu
 set rnu
 set nohlsearch
 set hidden
+set ignorecase
+set smartcase
 set noerrorbells
 set tabstop=4 softtabstop=4
 set shiftwidth=4
@@ -24,13 +26,15 @@ set completeopt=menuone,noinsert,noselect
 set cmdheight=1
 set updatetime=50
 set shortmess+=c
+set background=dark
 
 " PLUGINS
 source $HOME/.config/nvim/vim-plug/plugins.vim
 source $HOME/.config/nvim/themes/airline.vim
 source $HOME/.config/nvim/themes/onedark.vim
 "colorscheme gruvbox
- colorscheme onedark
+colorscheme onedark
+"colorscheme wal
 highlight Normal guibg=none
 
 let mapleader=" "
