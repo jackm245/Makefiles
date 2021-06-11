@@ -1,5 +1,5 @@
 call plug#begin('~/.vim/plugged')
-
+Plug 'dylanaraps/wal'
 Plug 'neoclide/coc.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'gruvbox-community/gruvbox'
